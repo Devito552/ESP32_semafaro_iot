@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Semafaro IOT",
+			"path": "../../Users/Guilherme Devito/OneDrive - SESISENAISP - Corporativo/Documentos/PlatformIO/Projects/Semafaro IOT"
+		},
+		{
+			"name": "ESP32_dht11",
+			"path": "../../Users/Guilherme Devito/OneDrive - SESISENAISP - Corporativo/Documentos/PlatformIO/Projects/ESP32_dht11"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ESP32_semafaro_iot"
+	}
+}
