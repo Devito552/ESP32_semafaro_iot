@@ -1,0 +1,25 @@
+{
+  "name": "esp32-semaforo-iot",
+  "version": "1.0.0",
+  "description": "Sistema de controle de semáforo IoT com ESP32 e MQTT",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Projeto estático - acesse index.html'",
+    "deploy": "echo 'Deploy automático via Render'"
+  },
+  "keywords": [
+    "esp32",
+    "iot",
+    "mqtt",
+    "semaforo",
+    "arduino",
+    "hivemq"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devito552/ESP32_semafaro_iot.git"
+  },
+  "homepage": "https://github.com/Devito552/ESP32_semafaro_iot#readme"
+}

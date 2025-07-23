@@ -4,26 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semáforo inteligente</title>
+    <title>Semáforo Inteligente - Controle IoT</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca Paho MQTT para WebSocket -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
 </head>
 
 <body>
-    <h1>Semáforo interativo</h1>
+    <div class="container">
+        <h1>🚦 Semáforo Inteligente</h1>
+        <p class="subtitle">Controle via MQTT com ESP32</p>
 
-    <div id="semaphore">
-        <div class="light red"></div>
-        <div class="light yellow"></div>
-        <div class="light green"></div>
+        <div id="semaphore">
+            <div class="light red"></div>
+            <div class="light yellow"></div>
+            <div class="light green"></div>
+        </div>
+
+        <div class="controls" id="controls">
+            <button class="button buttonGreen">🟢 Verde</button>
+            <button class="button buttonYellow">🟡 Amarelo</button>
+            <button class="button buttonRed">🔴 Vermelho</button>
+            <button class="button buttonAutomatic">🔄 Automático</button>
+            <button class="button buttonOff">⭕ Desligar</button>
+        </div>
+
+        <div class="info">
+            <h3>Informações de Conexão</h3>
+            <p>Broker: HiveMQ Public</p>
+            <p>Tópico Comando: senai928/semaforo/comando</p>
+            <p>Tópico Status: senai928/semaforo/status</p>
+        </div>
     </div>
 
-    <div class="controls" id="controls">
-        <button class="buttonGreen">Verde</button>
-        <button class="buttonYellow">Amarelo</button>
-        <button class="buttonRed">Vermelho</button>
-        <button class="buttonAutomatic">Automático</button>
-        <button class="buttonOff">Desligar</button>
-    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
